@@ -21,7 +21,11 @@
   --color-destructive-foreground: hsl(210 40% 98%);
   --color-ring: hsl(215 20.2% 65.1%);
   --color-radius: 0.5rem;
-  /* --color-background: 0 0% 100%;
+  --font-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-serif: Fraunces, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-heading: CalSans
+    /* --color-background: 0 0% 100%;
   --color-foreground: 222.2 84% 4.9%;
 
   --color-card: 0 0% 100%;
@@ -49,7 +53,7 @@
   --color-input: 214.3 31.8% 91.4%;
   --color-ring: 222.2 84% 4.9%;
 
-  --color-radius: 0.5rem; */
+  --color-radius: 0.5rem; */;
 }
 :root {
   .dark {
@@ -82,7 +86,13 @@
     --color-ring: 212.7 26.8% 83.9%;
   }
 }
-
+@font-face {
+  font-family: "CalSans";
+  src: url("/fonts/CalSans-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 @layer base {
   * {
     @apply border-border;

@@ -1,0 +1,92 @@
+---
+import { cn, formatDate } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+import { Icons } from "@/components/Icons";
+import "@/styles/mdx.css";
+
+const { post, authors } = Astro.props;
+const postData = post.data;
+const authorsData = authors.data;
+---
+
+<meta charset="utf-8" />
+<article class="container relative max-w-3xl py-6 lg:py-10">
+  {
+    postData ? (
+      <>
+        <a
+          href="/blogs"
+          class={cn(
+            buttonVariants({ variant: "ghost" }),
+            "absolute left-[-200px] top-14 hidden xl:inline-flex"
+          )}
+        >
+          <Icons.chevronLeft class="mr-2 h-4 w-4" />
+          See all posts
+        </a>
+        <div>
+          {postData.date && (
+            <time
+              dateTime={postData.date}
+              class="block text-sm text-muted-foreground"
+            >
+              Published on {formatDate(postData.date)}
+            </time>
+          )}
+          <h1 class="mt-2 inline-block font-heading text-4xl leading-tight lg:text-5xl">
+            {postData.title}
+          </h1>
+          {authorsData?.length ? (
+            <div class="mt-4 flex space-x-4">
+              {authorsData.map((author) =>
+                author ? (
+                  <a
+                    key={author._id}
+                    href={`https://twitter.com/${author.twitter}`}
+                    class="flex items-center space-x-2 text-sm"
+                  >
+                    <img
+                      src={author.avatar}
+                      alt={author.title}
+                      width={42}
+                      height={42}
+                      class="rounded-full bg-white"
+                    />
+                    <div class="flex-1 text-left leading-tight">
+                      <p class="font-medium">{author.title}</p>
+                      <p class="text-[12px] text-muted-foreground">
+                        @{author.twitter}
+                      </p>
+                    </div>
+                  </a>
+                ) : null
+              )}
+            </div>
+          ) : null}
+        </div>
+        {postData.image && (
+          <img
+            src={postData.image}
+            alt={postData.title}
+            width={720}
+            height={405}
+            class="my-8 rounded-md border bg-muted transition-colors"
+            priority
+          />
+        )}
+        <div class="mdx">
+          <slot />
+        </div>
+        <hr class="mt-12" />
+        <div class="flex justify-center py-6 lg:py-10">
+          <a href="/blog" class={cn(buttonVariants({ variant: "ghost" }))}>
+            <Icons.chevronLeft class="mr-2 h-4 w-4" />
+            See all posts
+          </a>
+        </div>
+      </>
+    ) : (
+      <div>Post not found</div>
+    )
+  }
+</article>

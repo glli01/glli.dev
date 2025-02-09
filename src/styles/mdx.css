@@ -1,0 +1,61 @@
+@reference "./global.css";
+
+@theme {
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(222.2 47.4% 11.2%);
+  --color-muted: hsl(210 40% 96.1%);
+  --color-muted-foreground: hsl(215.4 16.3% 46.9%);
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(222.2 47.4% 11.2%);
+  --color-border: hsl(214.3 31.8% 91.4%);
+  --color-input: hsl(214.3 31.8% 91.4%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(222.2 47.4% 11.2%);
+  --color-primary: hsl(222.2 47.4% 11.2%);
+  --color-primary-foreground: hsl(210 40% 98%);
+  --color-secondary: hsl(210 40% 96.1%);
+  --color-secondary-foreground: hsl(222.2 47.4% 11.2%);
+  --color-accent: hsl(210 40% 96.1%);
+  --color-accent-foreground: hsl(222.2 47.4% 11.2%);
+  --color-destructive: hsl(0 100% 50%);
+  --color-destructive-foreground: hsl(210 40% 98%);
+  --color-ring: hsl(215 20.2% 65.1%);
+  --color-radius: 0.5rem;
+  --font-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-serif: Fraunces, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-heading: CalSans;
+}
+
+[data-rehype-pretty-code-fragment] code {
+  @apply grid min-w-full break-words rounded-none border-0 bg-transparent text-sm text-black;
+  counter-reset: line;
+  box-decoration-break: clone;
+}
+[data-rehype-pretty-code-fragment] .line {
+  @apply px-4 py-1;
+}
+[data-rehype-pretty-code-fragment] [data-line-numbers] > .line::before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  width: 1rem;
+  margin-right: 1rem;
+  text-align: right;
+  color: gray;
+}
+[data-rehype-pretty-code-fragment] .line--highlighted {
+  @apply bg-slate-300 opacity-10;
+}
+[data-rehype-pretty-code-fragment] .line-highlighted span {
+  @apply relative;
+}
+[data-rehype-pretty-code-fragment] .word--highlighted {
+  @apply rounded-md bg-slate-300 opacity-10 p-1;
+}
+[data-rehype-pretty-code-title] {
+  @apply mt-4 py-2 px-4 text-sm font-medium;
+}
+[data-rehype-pretty-code-title] + pre {
+  @apply mt-0;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import { SquareTerminal } from "lucide-react";
+import { CiAlignCenterH } from "react-icons/ci";
 
 const navOptions = [
   {
@@ -29,32 +30,34 @@ const NavBar = ({ hasHeader }) => {
   return (
     <nav className="absolute top-0 w-full z-50 px-4 py-6">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="cursor-pointer flex items-center gap-2">
-          <img
-            src="https://placehold.co/32x32"
-            alt="logo"
-            width="32"
-            height="32"
-            className="w-8"
-          />
-          <span
+        <a className="cursor-pointer flex items-center gap-1" href="/">
+          <CiAlignCenterH
             className={cn(
               !hasHeader ? "text-foreground" : "text-accent",
+              "w-8 h-8 font-semibold",
+            )}
+          ></CiAlignCenterH>
+          <span
+            className={cn(
+              !hasHeader
+                ? "text-foreground hover:text-primary"
+                : "text-accent hover:text-primary-foreground",
               "font-semibold",
             )}
           >
             glli.dev
-            <SquareTerminal className="ml-1 inline align-top" />
+            {/* <SquareTerminal className="ml-1 inline align-top" /> */}
           </span>
-        </div>
+        </a>
         <div className="flex items-center gap-6">
           {navOptions.map((option) => (
             <a
               key={option.href}
               href={option.href}
               className={cn(
-                !hasHeader ? "text-foreground/80" : "text-accent/80",
-                "hover:text-white",
+                !hasHeader
+                  ? "text-foreground/80 hover:text-primary"
+                  : "text-accent/80 hover:text-primary-foreground",
               )}
               {...(option.isExternal && {
                 target: "_blank",

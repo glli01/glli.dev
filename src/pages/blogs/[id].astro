@@ -1,0 +1,24 @@
+---
+import { getCollection, render } from "astro:content";
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+import PostPage from "@/layouts/PostPage.astro";
+import mdxComponents from "@/components/ui/mdx-components";
+// 2. For your template, you can get the entry directly from the prop
+const { post } = Astro.props;
+const { Content } = await render(post);
+const allAuthors = await getCollection("authors");
+import NavBarContent from "@/layouts/NavBarContent.astro";
+---
+
+<meta charset="utf-8" />
+<NavBarContent>
+  <PostPage post={post} authors={allAuthors}>
+    <Content components={mdxComponents} />
+  </PostPage>
+</NavBarContent>

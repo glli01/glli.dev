@@ -1,8 +1,6 @@
-import React from "react";
-
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-[url(../assets/background.png)] px-4">
+    <section className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-[url(../assets/background.jpeg)] px-4">
       <div className="max-w-4xl mx-auto text-center text-white space-y-6 pt-32">
         <h1 className="text-5xl md:text-6xl font-serif">
           Hello, I am George Li{" "}
@@ -18,7 +16,7 @@ export default function Hero() {
           <div className="mt-8">
             <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-4 md:p-8">
               <img
-                src="/src/assets/background.png"
+                src="/src/assets/background.jpeg"
                 alt="Portal Interface"
                 width={800}
                 height={400}
