@@ -1,0 +1,33 @@
+---
+import FeaturesGrid from "@/components/FeaturesGrid";
+import ProjectTypes from "@/components/ProjectTypes";
+import Hero from "@/components/HeroImage";
+import '../styles/global.css';
+import NavBar from "@/components/NavBar";
+import { ClientRouter } from 'astro:transitions';
+---
+<html>
+  <head>
+    <link rel="shortcut icon" href="https://placehold.co/32x32">
+    <title>About</title>
+    <meta name="description" content="About page for george dev"}/>
+    <ClientRouter />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <NavBar hasHeader={true}/>
+
+    <!-- Hero Section -->
+    <Hero client:only="react"/>
+
+    <!-- Features Section -->
+    <FeaturesGrid client:only="react"/>
+
+    <!-- Additional Sections -->
+    <ProjectTypes client:only="react"/>
+    <!-- <secHeros="py-24 px-4 bg-gray-50">
+      <div class="max-w-3xl mx-auto">
+      </div>
+    </section> -->
+  </body>
+</html>

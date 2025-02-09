@@ -1,0 +1,19 @@
+---
+import BlogPage from '@/components/Blog';
+import '../styles/global.css';
+import NavBar from "@/components/NavBar";
+import { ClientRouter } from 'astro:transitions';
+---
+<html>
+  <head>
+    <link rel="shortcut icon" href="https://placehold.co/32x32">
+    <title>About</title>
+    <meta name="description" content="About page for george dev"}/>
+    <ClientRouter />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <NavBar hasHeader={false}/>
+    <BlogPage></BlogPage>
+  </body>
+</html>

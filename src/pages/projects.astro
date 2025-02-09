@@ -1,0 +1,18 @@
+---
+import Projects3 from "../components/Projects3.tsx";
+// import Projects from "../components/Projects.tsx";
+import '../styles/global.css';
+import NavBar from "@/components/NavBar";
+---
+<html>
+  <head>
+    <link rel="shortcut icon" href="https://placehold.co/32x32">
+    <title>Projects</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <NavBar hasHeader={true}/>
+
+    <Projects3 client:only="react"/>
+  </body>
+</html>
