@@ -123,7 +123,7 @@ const projects = [
     title: "glli.dev",
     description:
       "A personal website portfolio showcasing projects and skills, built with modern web technologies like Astro.js, React, and TypeScript, featuring a responsive design.",
-    image: "/src/assets/projects/gllidev.png",
+    image: "./src/assets/projects/gllidev.png",
     technologies: [
       "Astro.js",
       "React",
@@ -141,7 +141,7 @@ const projects = [
     title: "ankinotes",
     description:
       "An AI-powered tool that helps individuals learn through spaced repetition",
-    image: "/src/assets/projects/ankinotes.png",
+    image: "./src/assets/projects/ankinotes.png",
     technologies: [
       "Vite/React",
       "Node.js",
@@ -158,7 +158,7 @@ const projects = [
     title: "Pathyy",
     description:
       "An interactive 2D visualization tool of pathfinding algorithms such as dijkstra's, a-star, and BFS. Includes Maze generation through Prim's algorithm and visually appealing animations.",
-    image: "/src/assets/projects/pathyy.png",
+    image: "./src/assets/projects/pathyy.png",
     technologies: ["React", "CSS", "Node.js"],
     github: "https://github.com/glli01/visualizer",
   },

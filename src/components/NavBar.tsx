@@ -33,7 +33,7 @@ const NavBar = ({ hasHeader }: NavBarProps) => {
   return (
     <nav className="absolute top-0 w-full z-50 px-4 py-6">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <a className="cursor-pointer flex items-center gap-1" href="/">
+        <a className="cursor-pointer flex items-center gap-1" href="/glli.dev">
           <CiAlignCenterH
             className={cn(
               !hasHeader ? "text-foreground" : "text-accent",

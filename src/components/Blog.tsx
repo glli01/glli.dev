@@ -53,7 +53,7 @@ export default async function BlogPage() {
                     </p>
                   )}
                   <a
-                    href={"/blogs/example"}
+                    href={"/glli.dev/blogs/example"}
                     className="cursor-pointer absolute inset-0"
                   >
                     <span className="sr-only">View Article</span>

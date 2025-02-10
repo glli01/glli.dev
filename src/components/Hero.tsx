@@ -1,6 +1,7 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
+const base = import.meta.env.BASE_URL;
 
 export default function Hero() {
   return (
@@ -19,7 +20,7 @@ export default function Hero() {
             muay thai, and exploring new foods.
           </p>
           <a
-            href="/projects"
+            href="/glli.dev/projects"
             className={cn(
               buttonVariants({ variant: "secondary" }),
               "mt-6 xl:inline-flex rounded-full pr-2",
@@ -32,7 +33,7 @@ export default function Hero() {
         <div className="mt-12 flex justify-center relative h-60">
           <div className="absolute bg-white/70 backdrop-blur-xl w-2xl rounded-3xl p-4 md:p-4">
             <img
-              src="/src/assets/background.jpeg"
+              src={"./src/assets/background.jpeg"}
               alt="Portal Interface"
               className="rounded-xl w-full"
             />
