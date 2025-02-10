@@ -4,17 +4,17 @@ import { CiAlignCenterH } from "react-icons/ci";
 
 const navOptions = [
   {
-    href: "/",
+    href: "/glli.dev",
     label: "About",
     isExternal: false,
   },
   {
-    href: "/projects",
+    href: "/glli.dev/projects",
     label: "Projects",
     isExternal: false,
   },
   {
-    href: "/blogs",
+    href: "/glli.dev/blogs",
     label: "Blog",
     isExternal: false,
   },
