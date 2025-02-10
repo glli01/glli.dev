@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import "@/styles/global.css";
 import NavBar from "@/components/NavBar";
 import { ClientRouter } from "astro:transitions";
+import Experience from "@/components/Experience";
 ---
 
 <html>
@@ -17,7 +18,7 @@ import { ClientRouter } from "astro:transitions";
   </head>
   <body>
     <!-- Navigation -->
-    <NavBar hasHeader={true} />
+    <NavBar hasHeader={true} client:only="react" />
 
     <!-- Hero Section -->
     <Hero client:only="react" />
@@ -31,5 +32,6 @@ import { ClientRouter } from "astro:transitions";
       <div class="max-w-3xl mx-auto">
       </div>
     </section> -->
+    <Experience client:only="react" />
   </body>
 </html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html><base href="/glli.dev"><meta charset="utf-8"><style>/*! tailwindcss v4.0.5 | MIT License | https://tailwindcss.com */[data-rehype-pretty-code-fragment] code{border-style:var(--tw-border-style);min-width:100%;font-size:var(--text-sm);line-height:var(--tw-leading,var(--text-sm--line-height));overflow-wrap:break-word;color:var(--color-black);counter-reset:line;-webkit-box-decoration-break:clone;box-decoration-break:clone;background-color:#0000;border-width:0;border-radius:0;display:grid}[data-rehype-pretty-code-fragment] .line{padding-inline:calc(var(--spacing)*4);padding-block:calc(var(--spacing)*1)}[data-rehype-pretty-code-fragment] [data-line-numbers]>.line:before{counter-increment:line;content:counter(line);text-align:right;color:gray;width:1rem;margin-right:1rem;display:inline-block}[data-rehype-pretty-code-fragment] .line--highlighted{background-color:var(--color-slate-300);opacity:.1}[data-rehype-pretty-code-fragment] .line-highlighted span{position:relative}[data-rehype-pretty-code-fragment] .word--highlighted{border-radius:var(--radius-md);background-color:var(--color-slate-300);padding:calc(var(--spacing)*1);opacity:.1}[data-rehype-pretty-code-title]{margin-top:calc(var(--spacing)*4);padding-inline:calc(var(--spacing)*4);padding-block:calc(var(--spacing)*2);font-size:var(--text-sm);line-height:var(--tw-leading,var(--text-sm--line-height));--tw-font-weight:var(--font-weight-medium);font-weight:var(--font-weight-medium)}[data-rehype-pretty-code-title]+pre{margin-top:calc(var(--spacing)*0)}@property --tw-border-style{syntax:"*";inherits:false;initial-value:solid}@property --tw-font-weight{syntax:"*";inherits:false}
+</style>
+<link rel="stylesheet" href="/glli.dev/_astro/blogs.C1pzG39P.css">
+<link rel="stylesheet" href="/glli.dev/_astro/blogs.2BbZdcHH.css"><div class="min-h-screen"> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();;(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="Z27gNb5" component-url="/glli.dev/_astro/NavBar.B5RTqREr.js" component-export="default" renderer-url="/glli.dev/_astro/client.dqIoCOJE.js" props="{&quot;hasHeader&quot;:[0,false]}" ssr client="only" opts="{&quot;name&quot;:&quot;NavBar&quot;,&quot;value&quot;:&quot;react&quot;}"></astro-island> <main class="pt-24 px-4 flex justify-center"> <meta charset="utf-8"><article class="container relative max-w-3xl py-6 lg:py-10">  <a href="/glli.dev/blogs" class="items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 absolute left-[-200px] top-14 hidden xl:inline-flex"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left mr-2 h-4 w-4"><path d="m15 18-6-6 6-6"></path></svg>
+See all posts
+</a> <div> <time datetime="Fri Mar 03 2023 18:00:00 GMT-0600 (Central Standard Time)" class="block text-sm text-muted-foreground">
+Published on March 3, 2023 </time> <h1 class="mt-2 inline-block font-heading text-4xl leading-tight lg:text-5xl"> Dynamic Routing and Static Regeneration </h1> <div class="mt-4 flex space-x-4"> <a href="https://twitter.com/fromGeorgeLi" class="flex items-center space-x-2 text-sm"> <img src="https://pbs.twimg.com/profile_images/1882154001463992320/LAedU2FG_400x400.png" alt="George Li" width="42" height="42" class="rounded-full bg-white overflow-clip"> <div class="flex-1 text-left leading-tight"> <p class="font-medium">George Li</p> <p class="text-[12px] text-muted-foreground">
+@fromGeorgeLi </p> </div> </a> </div> </div> <img src="/glli.dev/images/blogs/blog-post-2.jpg" alt="Dynamic Routing and Static Regeneration" width="720" height="405" class="my-8 rounded-md border bg-muted transition-colors"><div class="mdx"> <div class="my-6 flex items-start rounded-md border border-l-4 p-4"><div><p class="leading-7 [&amp;:not(:first-child)]:mt-6">The text below is from the <a class="font-medium underline underline-offset-4" href="https://play.tailwindcss.com/uj1vGACRJA?layout=preview">Tailwind
+CSS</a> docs. I copied it
+here to test the markdown styles. <strong>Tailwind is awesome. You should use it.</strong></p></div></div>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you <em>really are</em> just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">We get lots of complaints about it actually, with people regularly asking us things like:</p>
+<blockquote class="mt-6 border-l-2 pl-6 italic [&amp;&gt;*]:text-muted-foreground">
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Why is Tailwind removing the default styles on my <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">h1</code> elements? How do I disable this? What do you mean I lose all the other base styles too?
+We hear you, but we’re not convinced that simply disabling our base styles is what you really want. You don’t want to have to remove annoying margins every time you use a <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">p</code> element in a piece of your dashboard UI. And I doubt you really want your blog posts to use the user-agent styles either — you want them to look <em>awesome</em>, not awful.</p>
+</blockquote>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">The <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">@tailwindcss/typography</code> plugin is our attempt to give you what you <em>actually</em> want, without any of the downsides of doing something stupid like disabling our base styles.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">It adds a new <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">prose</code> class that you can slap on any block of vanilla HTML content and turn it into a beautiful, well-formatted document:</p>
+<figure data-rehype-pretty-code-figure><pre class="mb-4 mt-6 overflow-x-auto rounded-lg border bg-black py-4" style="background-color:#22272e;color:#adbac7" tabindex="0" data-language="html" data-theme="github-dark-dimmed"><code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm" data-language="html" data-theme="github-dark-dimmed" style="display:grid"><span data-line><span style="color:#ADBAC7">&lt;</span><span style="color:#8DDB8C">article</span><span style="color:#6CB6FF"> class</span><span style="color:#ADBAC7">=</span><span style="color:#96D0FF">&quot;prose&quot;</span><span style="color:#ADBAC7">&gt;</span></span>
+<span data-line><span style="color:#ADBAC7">  &lt;</span><span style="color:#8DDB8C">h1</span><span style="color:#ADBAC7">&gt;Garlic bread with cheese: What the science tells us&lt;/</span><span style="color:#8DDB8C">h1</span><span style="color:#ADBAC7">&gt;</span></span>
+<span data-line><span style="color:#ADBAC7">  &lt;</span><span style="color:#8DDB8C">p</span><span style="color:#ADBAC7">&gt;</span></span>
+<span data-line><span style="color:#ADBAC7">    For years parents have espoused the health benefits of eating garlic bread</span></span>
+<span data-line><span style="color:#ADBAC7">    with cheese to their children, with the food earning such an iconic status</span></span>
+<span data-line><span style="color:#ADBAC7">    in our culture that kids will often dress up as warm, cheesy loaf for</span></span>
+<span data-line><span style="color:#ADBAC7">    Halloween.</span></span>
+<span data-line><span style="color:#ADBAC7">  &lt;/</span><span style="color:#8DDB8C">p</span><span style="color:#ADBAC7">&gt;</span></span>
+<span data-line><span style="color:#ADBAC7">  &lt;</span><span style="color:#8DDB8C">p</span><span style="color:#ADBAC7">&gt;</span></span>
+<span data-line><span style="color:#ADBAC7">    But a recent study shows that the celebrated appetizer may be linked to a</span></span>
+<span data-line><span style="color:#ADBAC7">    series of rabies cases springing up around the country.</span></span>
+<span data-line><span style="color:#ADBAC7">  &lt;/</span><span style="color:#8DDB8C">p</span><span style="color:#ADBAC7">&gt;</span></span>
+<span data-line><span style="color:#ADBAC7">&lt;/</span><span style="color:#8DDB8C">article</span><span style="color:#ADBAC7">&gt;</span></span></code></pre></figure>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">For more information about how to use the plugin and the features it includes, <a class="font-medium underline underline-offset-4" href="https://github.com/tailwindcss/typography/blob/master/README.md">read the documentation</a>.</p>
+<hr class="my-4 md:my-8"/>
+<h2 class="mt-10 scroll-m-20 border-b pb-1 text-3xl font-semibold tracking-tight first:mt-0" id="what-to-expect-from-here-on-out">What to expect from here on out</h2>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">What follows from here is just a bunch of absolute nonsense I’ve written to dogfood the plugin itself. It includes every sensible typographic element I could think of, like <strong>bold text</strong>, unordered lists, ordered lists, code blocks, block quotes, <em>and even italics</em>.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">It’s important to cover all of these use cases for a few reasons:</p>
+<ol class="my-6 ml-6 list-decimal">
+<li class="mt-2">We want everything to look good out of the box.</li>
+<li class="mt-2">Really just the first reason, that’s the whole point of the plugin.</li>
+<li class="mt-2">Here’s a third pretend reason though a list with three items looks more realistic than a list with two items.</li>
+</ol>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Now we’re going to try out another header style.</p>
+<h3 class="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight" id="typography-should-be-easy">Typography should be easy</h3>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">So that’s a header for you — with any luck if we’ve done our job correctly that will look pretty reasonable.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Something a wise person once told me about typography is:</p>
+<blockquote class="mt-6 border-l-2 pl-6 italic [&amp;&gt;*]:text-muted-foreground">
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Typography is pretty important if you don’t want your stuff to look like trash. Make it good then it won’t be bad.</p>
+</blockquote>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">It’s probably important that images look okay here by default as well:</p>
+<img src="/glli.dev/images/blogs/blog-post-4.jpg" width="718" height="404" alt="Image"/>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Now I’m going to show you an example of an unordered list to make sure that looks good, too:</p>
+<ul class="my-6 ml-6 list-disc">
+<li class="mt-2">So here is the first item in this list.</li>
+<li class="mt-2">In this example we’re keeping the items short.</li>
+<li class="mt-2">Later, we’ll use longer, more complex list items.</li>
+</ul>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">And that’s the end of this section.</p>
+<h2 class="mt-10 scroll-m-20 border-b pb-1 text-3xl font-semibold tracking-tight first:mt-0" id="what-if-we-stack-headings">What if we stack headings?</h2>
+<h3 class="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight" id="we-should-make-sure-that-looks-good-too">We should make sure that looks good, too.</h3>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Sometimes you have headings directly underneath each other. In those cases you often have to undo the top margin on the second heading because it usually looks better for the headings to be closer together than a paragraph followed by a heading should be.</p>
+<h3 class="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight" id="when-a-heading-comes-after-a-paragraph">When a heading comes after a paragraph …</h3>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">When a heading comes after a paragraph, we need a bit more space, like I already mentioned above. Now let’s see what a more complex list would look like.</p>
+<ul class="my-6 ml-6 list-disc">
+<li class="mt-2">
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6"><strong>I often do this thing where list items have headings.</strong></p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">For some reason I think this looks cool which is unfortunate because it’s pretty annoying to get the styles right.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">I often have two or three paragraphs in these list items, too, so the hard part is getting the spacing between the paragraphs, list item heading, and separate list items to all make sense. Pretty tough honestly, you could make a strong argument that you just shouldn’t write this way.</p>
+</li>
+<li class="mt-2">
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6"><strong>Since this is a list, I need at least two items.</strong></p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">I explained what I’m doing already in the previous list item, but a list wouldn’t be a list if it only had one item, and we really want this to look realistic. That’s why I’ve added this second list item so I actually have something to look at when writing the styles.</p>
+</li>
+<li class="mt-2">
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6"><strong>It’s not a bad idea to add a third item either.</strong></p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">I think it probably would’ve been fine to just use two items but three is definitely not worse, and since I seem to be having no trouble making up arbitrary things to type, I might as well include it.</p>
+</li>
+</ul>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">After this sort of list I usually have a closing statement or paragraph, because it kinda looks weird jumping right to a heading.</p>
+<h2 class="mt-10 scroll-m-20 border-b pb-1 text-3xl font-semibold tracking-tight first:mt-0" id="code-should-look-okay-by-default">Code should look okay by default.</h2>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">I think most people are going to use <a class="font-medium underline underline-offset-4" href="https://highlightjs.org/">highlight.js</a> or <a class="font-medium underline underline-offset-4" href="https://prismjs.com/">Prism</a> or something if they want to style their code blocks but it wouldn’t hurt to make them look <em>okay</em> out of the box, even with no syntax highlighting.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Here’s what a default <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">tailwind.config.js</code> file looks like at the time of writing:</p>
+<figure data-rehype-pretty-code-figure><pre class="mb-4 mt-6 overflow-x-auto rounded-lg border bg-black py-4" style="background-color:#22272e;color:#adbac7" tabindex="0" data-language="js" data-theme="github-dark-dimmed"><code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm" data-language="js" data-theme="github-dark-dimmed" style="display:grid"><span data-line><span style="color:#6CB6FF">module</span><span style="color:#ADBAC7">.</span><span style="color:#6CB6FF">exports</span><span style="color:#F47067"> =</span><span style="color:#ADBAC7"> {</span></span>
+<span data-line><span style="color:#ADBAC7">  purge: [],</span></span>
+<span data-line><span style="color:#ADBAC7">  theme: {</span></span>
+<span data-line><span style="color:#ADBAC7">    extend: {},</span></span>
+<span data-line><span style="color:#ADBAC7">  },</span></span>
+<span data-line><span style="color:#ADBAC7">  variants: {},</span></span>
+<span data-line><span style="color:#ADBAC7">  plugins: [],</span></span>
+<span data-line><span style="color:#ADBAC7">};</span></span></code></pre></figure>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Hopefully that looks good enough to you.</p>
+<h3 class="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight" id="what-about-nested-lists">What about nested lists?</h3>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Nested lists basically always look bad which is why editors like Medium don’t even let you do it, but I guess since some of you goofballs are going to do it we have to carry the burden of at least making it work.</p>
+<ol class="my-6 ml-6 list-decimal">
+<li class="mt-2"><strong>Nested lists are rarely a good idea.</strong>
+<ul class="my-6 ml-6 list-disc">
+<li class="mt-2">You might feel like you are being really “organized” or something but you are just creating a gross shape on the screen that is hard to read.</li>
+<li class="mt-2">Nested navigation in UIs is a bad idea too, keep things as flat as possible.</li>
+<li class="mt-2">Nesting tons of folders in your source code is also not helpful.</li>
+</ul>
+</li>
+<li class="mt-2"><strong>Since we need to have more items, here’s another one.</strong>
+<ul class="my-6 ml-6 list-disc">
+<li class="mt-2">I’m not sure if we’ll bother styling more than two levels deep.</li>
+<li class="mt-2">Two is already too much, three is guaranteed to be a bad idea.</li>
+<li class="mt-2">If you nest four levels deep you belong in prison.</li>
+</ul>
+</li>
+<li class="mt-2"><strong>Two items isn’t really a list, three is good though.</strong>
+<ul class="my-6 ml-6 list-disc">
+<li class="mt-2">Again please don’t nest lists if you want people to actually read your content.</li>
+<li class="mt-2">Nobody wants to look at this.</li>
+<li class="mt-2">I’m upset that we even have to bother styling this.</li>
+</ul>
+</li>
+</ol>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">The most annoying thing about lists in Markdown is that <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">&lt;li&gt;</code> elements aren’t given a child <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">&lt;p&gt;</code> tag unless there are multiple paragraphs in the list item. That means I have to worry about styling that annoying situation too.</p>
+<ul class="my-6 ml-6 list-disc">
+<li class="mt-2">
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6"><strong>For example, here’s another nested list.</strong></p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">But this time with a second paragraph.</p>
+<ul class="my-6 ml-6 list-disc">
+<li class="mt-2">These list items won’t have <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">&lt;p&gt;</code> tags</li>
+<li class="mt-2">Because they are only one line each</li>
+</ul>
+</li>
+<li class="mt-2">
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6"><strong>But in this second top-level list item, they will.</strong></p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">This is especially annoying because of the spacing on this paragraph.</p>
+<ul class="my-6 ml-6 list-disc">
+<li class="mt-2">
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">As you can see here, because I’ve added a second line, this list item now has a <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">&lt;p&gt;</code> tag.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">This is the second line I’m talking about by the way.</p>
+</li>
+<li class="mt-2">
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Finally here’s another list item so it’s more like a list.</p>
+</li>
+</ul>
+</li>
+<li class="mt-2">
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">A closing list item, but with no nested list, because why not?</p>
+</li>
+</ul>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">And finally a sentence to close off this section.</p>
+<h2 class="mt-10 scroll-m-20 border-b pb-1 text-3xl font-semibold tracking-tight first:mt-0" id="there-are-other-elements-we-need-to-style">There are other elements we need to style</h2>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">I almost forgot to mention links, like <a class="font-medium underline underline-offset-4" href="https://tailwindcss.com">this link to the Tailwind CSS website</a>. We almost made them blue but that’s so yesterday, so we went with dark gray, feels edgier.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">We even included table styles, check it out:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-6 w-full overflow-y-auto"><table class="w-full"><thead><tr class="m-0 border-t p-0 even:bg-muted"><th class="border px-4 py-2 text-left font-bold [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Wrestler</th><th class="border px-4 py-2 text-left font-bold [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Origin</th><th class="border px-4 py-2 text-left font-bold [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Finisher</th></tr></thead><tbody><tr class="m-0 border-t p-0 even:bg-muted"><td class="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Bret “The Hitman” Hart</td><td class="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Calgary, AB</td><td class="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Sharpshooter</td></tr><tr class="m-0 border-t p-0 even:bg-muted"><td class="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Stone Cold Steve Austin</td><td class="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Austin, TX</td><td class="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Stone Cold Stunner</td></tr><tr class="m-0 border-t p-0 even:bg-muted"><td class="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Randy Savage</td><td class="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Sarasota, FL</td><td class="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Elbow Drop</td></tr><tr class="m-0 border-t p-0 even:bg-muted"><td class="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Vader</td><td class="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Boulder, CO</td><td class="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Vader Bomb</td></tr><tr class="m-0 border-t p-0 even:bg-muted"><td class="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Razor Ramon</td><td class="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Chuluota, FL</td><td class="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">Razor’s Edge</td></tr></tbody></table></div>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">We also need to make sure inline code looks good, like if I wanted to talk about <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">&lt;span&gt;</code> elements or tell you the good news about <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">@tailwindcss/typography</code>.</p>
+<h3 class="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight" id="sometimes-i-even-use-code-in-headings">Sometimes I even use <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">code</code> in headings</h3>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Even though it’s probably a bad idea, and historically I’ve had a hard time making it look good. This <em>“wrap the code blocks in backticks”</em> trick works pretty well though really.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Another thing I’ve done in the past is put a <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">code</code> tag inside of a link, like if I wanted to tell you about the <a class="font-medium underline underline-offset-4" href="https://github.com/tailwindcss/docs"><code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">tailwindcss/docs</code></a> repository. I don’t love that there is an underline below the backticks but it is absolutely not worth the madness it would require to avoid it.</p>
+<h4 class="mt-8 scroll-m-20 text-xl font-semibold tracking-tight" id="we-havent-used-an-h4-yet">We haven’t used an <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">h4</code> yet</h4>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">But now we have. Please don’t use <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">h5</code> or <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">h6</code> in your content, Medium only supports two heading levels for a reason, you animals. I honestly considered using a <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">before</code> pseudo-element to scream at you if you use an <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">h5</code> or <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">h6</code>.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">We don’t style them at all out of the box because <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">h4</code> elements are already so small that they are the same size as the body copy. What are we supposed to do with an <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">h5</code>, make it <em>smaller</em> than the body copy? No thanks.</p>
+<h3 class="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight" id="we-still-need-to-think-about-stacked-headings-though">We still need to think about stacked headings though.</h3>
+<h4 class="mt-8 scroll-m-20 text-xl font-semibold tracking-tight" id="lets-make-sure-we-dont-screw-that-up-with-h4-elements-either">Let’s make sure we don’t screw that up with <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">h4</code> elements, either.</h4>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Phew, with any luck we have styled the headings above this text and they look pretty good.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">Let’s add a closing paragraph here so things end with a decently sized block of text. I can’t explain why I want things to end that way but I have to assume it’s because I think things will look weird or unbalanced if there is a heading too close to the end of the document.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">What I’ve written here is probably long enough, but adding this final sentence can’t hurt.</p>
+<h2 class="mt-10 scroll-m-20 border-b pb-1 text-3xl font-semibold tracking-tight first:mt-0" id="github-flavored-markdown">GitHub Flavored Markdown</h2>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">I’ve also added support for GitHub Flavored Mardown using <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">remark-gfm</code>.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">With <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">remark-gfm</code>, we get a few extra features in our markdown. Example: autolink literals.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">A link like <a class="font-medium underline underline-offset-4" href="http://www.example.com">www.example.com</a> or <a class="font-medium underline underline-offset-4" href="https://example.com">https://example.com</a> would automatically be converted into an <code class="relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm">a</code> tag.</p>
+<p class="leading-7 [&amp;:not(:first-child)]:mt-6">This works for email links too: <a class="font-medium underline underline-offset-4" href="mailto:contact@example.com">contact@example.com</a>.</p> </div> <hr class="mt-12"> <div class="flex justify-center py-6 lg:py-10"> <a href="/glli.dev/blogs" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left mr-2 h-4 w-4"><path d="m15 18-6-6 6-6"></path></svg>
+See all posts
+</a> </div>  </article> </main> </div>

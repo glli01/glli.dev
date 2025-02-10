@@ -1,9 +1,10 @@
 ---
 import NavBar from "@/components/NavBar";
+import "../styles/global.css";
 ---
 
 <div class="min-h-screen">
-  <NavBar hasHeader={false} />
+  <NavBar hasHeader={false} client:only="react" />
   <main class="pt-24 px-4 flex justify-center">
     <slot />
   </main>

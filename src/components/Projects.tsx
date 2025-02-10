@@ -1,11 +1,13 @@
 import { Globe } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
+const base = import.meta.env.BASE_URL;
+console.log(base);
 export default function Projects() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative md:min-h-screen sm:max-h-screen/2 sm:min-h-120 flex items-center justify-center bg-[url(../assets/background.jpeg)] bg-cover bg-top px-4">
+      <section className="relative md:min-h-screen sm:max-h-screen/2 sm:min-h-120 flex items-center justify-center bg-[url(/glli.dev/images/background.jpeg)] bg-cover bg-top px-4">
         <div className="max-w-4xl mx-auto text-center text-white space-y-6">
           <h1 className="text-5xl md:text-6xl font-serif">Featured Projects</h1>
           <h2 className="text-2xl md:text-3xl font-serif">
@@ -123,7 +125,7 @@ const projects = [
     title: "glli.dev",
     description:
       "A personal website portfolio showcasing projects and skills, built with modern web technologies like Astro.js, React, and TypeScript, featuring a responsive design.",
-    image: "./src/assets/projects/gllidev.png",
+    image: base + "/images/projects/gllidev.png",
     technologies: [
       "Astro.js",
       "React",
@@ -138,10 +140,19 @@ const projects = [
   },
   {
     id: 2,
+    title: "Pathyy",
+    description:
+      "An interactive 2D visualization tool of pathfinding algorithms such as dijkstra's, a-star, and BFS. Includes Maze generation through Prim's algorithm and visually appealing animations.",
+    image: base + "/images/projects/pathyy.png",
+    technologies: ["React", "CSS", "Node.js"],
+    github: "https://github.com/glli01/visualizer",
+  },
+  {
+    id: 3,
     title: "ankinotes",
     description:
       "An AI-powered tool that helps individuals learn through spaced repetition",
-    image: "./src/assets/projects/ankinotes.png",
+    image: base + "/images/projects/ankinotes.png",
     technologies: [
       "Vite/React",
       "Node.js",
@@ -152,14 +163,5 @@ const projects = [
       "Docker-compose",
     ],
     inProgress: true,
-  },
-  {
-    id: 3,
-    title: "Pathyy",
-    description:
-      "An interactive 2D visualization tool of pathfinding algorithms such as dijkstra's, a-star, and BFS. Includes Maze generation through Prim's algorithm and visually appealing animations.",
-    image: "./src/assets/projects/pathyy.png",
-    technologies: ["React", "CSS", "Node.js"],
-    github: "https://github.com/glli01/visualizer",
   },
 ];

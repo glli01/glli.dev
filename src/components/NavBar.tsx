@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-// import { SquareTerminal } from "lucide-react";
+import "@/styles/global.css";
 import { CiAlignCenterH } from "react-icons/ci";
 
 const navOptions = [

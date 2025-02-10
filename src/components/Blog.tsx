@@ -1,4 +1,5 @@
 import { formatDate } from "@/lib/utils";
+import "@/styles/global.css";
 import { getCollection } from "astro:content";
 
 export const metadata = {

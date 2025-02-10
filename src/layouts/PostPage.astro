@@ -8,7 +8,7 @@ import "@/styles/mdx.css";
 const { post } = Astro.props;
 const postData = post.data;
 let authors = await getCollection("authors");
-authors = authors?.filter((author) =>
+authors = authors?.filter((author: any) =>
   postData.authors?.includes(author?.data?.title)
 );
 console.log(authors);

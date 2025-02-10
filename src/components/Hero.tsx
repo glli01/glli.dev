@@ -1,11 +1,11 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
-const base = import.meta.env.BASE_URL;
+import background from "@/assets/background.jpeg";
 
 export default function Hero() {
   return (
-    <section className="relative md:h-screen sm:max-h-screen/2 sm:min-h-120 flex items-center justify-center bg-cover bg-center bg-[url(../assets/background.jpeg)] px-4">
+    <section className="relative md:h-screen sm:max-h-screen/2 sm:min-h-120 flex items-center justify-center bg-cover bg-center bg-[url(/glli.dev/images/background.jpeg)] px-4">
       <div className="max-w-4xl mx-auto text-center text-white space-y-3 pt-32">
         <h1 className="text-5xl md:text-6xl font-serif">
           Hello, I am George Li{" "}
@@ -33,7 +33,7 @@ export default function Hero() {
         <div className="mt-12 flex justify-center relative h-60">
           <div className="absolute bg-white/70 backdrop-blur-xl w-2xl rounded-3xl p-4 md:p-4">
             <img
-              src={"./src/assets/background.jpeg"}
+              src={background.src}
               alt="Portal Interface"
               className="rounded-xl w-full"
             />
