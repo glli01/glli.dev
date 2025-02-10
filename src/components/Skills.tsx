@@ -3,6 +3,7 @@ import { FaGolang } from "react-icons/fa6";
 import { RiOpenaiFill } from "react-icons/ri";
 import { SiAnsible, SiKubernetes, SiTerraform } from "react-icons/si";
 import { BiLogoMongodb, BiLogoPostgresql } from "react-icons/bi";
+import "@/styles/global.css";
 
 const features = [
   {
