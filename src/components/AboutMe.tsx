@@ -43,8 +43,8 @@ const AboutMe = () => {
         <p className="text-center text-muted-foreground mb-12">
           Currently, I work at Oracle as a full stack developer, focusing on
           backend and infrastructure. In my free time, I enjoy developing
-          projects that interest me and reading papers on technical advancements
-          (currently drawn into the Artificial Intelligence craze).
+          projects that interest me and reading papers on technical
+          advancements.
         </p>
 
         <div className="space-y-24">
