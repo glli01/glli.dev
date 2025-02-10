@@ -62,9 +62,9 @@ const features = [
   },
 ];
 
-export default function FeaturesGrid() {
+export default function SkillsAndTech() {
   return (
-    <section className="py-24 px-4">
+    <section className="py-24 px-4 bg-gray-50">
       <div className="max-w-3xl mx-auto text-center space-y-6">
         <h2 className="text-4xl font-serif">Skills and Technologies</h2>
         <p className="text-muted-foreground">

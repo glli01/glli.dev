@@ -1,11 +1,11 @@
 ---
-import FeaturesGrid from "@/components/FeaturesGrid";
-import ProjectTypes from "@/components/ProjectTypes";
 import Hero from "@/components/Hero";
 import "@/styles/global.css";
 import NavBar from "@/components/NavBar";
 import { ClientRouter } from "astro:transitions";
 import Experience from "@/components/Experience";
+import SkillsAndTech from "@/components/Skills";
+import AboutMe from "@/components/AboutMe";
 ---
 
 <html>
@@ -23,15 +23,11 @@ import Experience from "@/components/Experience";
     <!-- Hero Section -->
     <Hero client:only="react" />
 
-    <!-- Features Section -->
-    <FeaturesGrid client:only="react" />
-
     <!-- Additional Sections -->
-    <ProjectTypes client:only="react" />
-    <!-- <secHeros="py-24 px-4 bg-gray-50">
-      <div class="max-w-3xl mx-auto">
-      </div>
-    </section> -->
+    <AboutMe client:only="react" />
+
+    <SkillsAndTech client:only="react" />
+
     <Experience client:only="react" />
   </body>
 </html>

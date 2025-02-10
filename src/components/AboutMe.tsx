@@ -3,8 +3,6 @@ import {
   FaMountain,
   FaFistRaised,
   FaDumbbell,
-  FaUniversity,
-  FaBriefcase,
 } from "react-icons/fa";
 
 const AboutMe = () => {
@@ -34,7 +32,7 @@ const AboutMe = () => {
   ];
 
   return (
-    <section className="py-24 px-4 bg-gray-50">
+    <section className="py-24 px-4 ">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-4xl font-serif text-center mb-8">About Me</h2>
         <p className="text-center text-muted-foreground mb-1">

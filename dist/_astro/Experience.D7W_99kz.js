@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime.D_zvdyIk.js";import{i as r,j as i}from"./index.Ck370pde.js";import"./iconBase.CsihB_xR.js";import"./index.ai7qpRr1.js";const a=[{icon:e.jsx(r,{className:"w-8 h-8 text-gray-900 flex-shrink-0 mr-4"}),title:"Sniip",description:`Tech Lead
+import{j as e}from"./jsx-runtime.D_zvdyIk.js";import{i as r,j as i}from"./index.BPgBigJF.js";import"./iconBase.CsihB_xR.js";import"./index.ai7qpRr1.js";const a=[{icon:e.jsx(r,{className:"w-8 h-8 text-gray-900 flex-shrink-0 mr-4"}),title:"Sniip",description:`Tech Lead
                     <br />
                     Dec 2020 - Jan 2022 | Tokyo, Japan
                     <br />

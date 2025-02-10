@@ -1,6 +1,7 @@
 import { formatDate } from "@/lib/utils";
 import "@/styles/global.css";
 import { getCollection } from "astro:content";
+const base = import.meta.env.BASE_URL;
 
 export const metadata = {
   title: "Blog",
@@ -54,7 +55,7 @@ export default async function BlogPage() {
                     </p>
                   )}
                   <a
-                    href={"/glli.dev/blogs/example"}
+                    href={base + "/blogs/" + post.id}
                     className="cursor-pointer absolute inset-0"
                   >
                     <span className="sr-only">View Article</span>
