@@ -21,13 +21,13 @@ const authorsData = authors.data;
             "absolute left-[-200px] top-14 hidden xl:inline-flex"
           )}
         >
-          <Icons.chevronLeft class="mr-2 h-4 w-4" />
+          <Icons.chevronLeft className="mr-2 h-4 w-4" />
           See all posts
         </a>
         <div>
           {postData.date && (
             <time
-              dateTime={postData.date}
+              datetime={postData.date}
               class="block text-sm text-muted-foreground"
             >
               Published on {formatDate(postData.date)}
@@ -38,10 +38,9 @@ const authorsData = authors.data;
           </h1>
           {authorsData?.length ? (
             <div class="mt-4 flex space-x-4">
-              {authorsData.map((author) =>
+              {authorsData.map((author: any) =>
                 author ? (
                   <a
-                    key={author._id}
                     href={`https://twitter.com/${author.twitter}`}
                     class="flex items-center space-x-2 text-sm"
                   >
@@ -71,7 +70,6 @@ const authorsData = authors.data;
             width={720}
             height={405}
             class="my-8 rounded-md border bg-muted transition-colors"
-            priority
           />
         )}
         <div class="mdx">
@@ -80,7 +78,7 @@ const authorsData = authors.data;
         <hr class="mt-12" />
         <div class="flex justify-center py-6 lg:py-10">
           <a href="/blog" class={cn(buttonVariants({ variant: "ghost" }))}>
-            <Icons.chevronLeft class="mr-2 h-4 w-4" />
+            <Icons.chevronLeft className="mr-2 h-4 w-4" />
             See all posts
           </a>
         </div>

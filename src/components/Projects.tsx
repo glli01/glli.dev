@@ -1,6 +1,5 @@
 import { Globe } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
-import React from "react";
 
 export default function Projects() {
   return (

@@ -14,7 +14,7 @@ export default function Hero() {
             Climbing, Training in Muay Thai, and Exploring New Foods
           </p>
           <div className="mt-8">
-            <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-4 md:p-8">
+            <div className="bg-white/70 backdrop-blur-xl rounded-3xl p-4 md:p-4">
               <img
                 src="/src/assets/background.jpeg"
                 alt="Portal Interface"

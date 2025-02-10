@@ -15,6 +15,7 @@ export default [
         "error",
         { argsIgnorePattern: "^_" },
       ],
+      "react/react-in-jsx-scope": "disabled",
     },
   },
   pluginReact.configs.flat.recommended,

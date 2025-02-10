@@ -2,7 +2,6 @@ import { FaNodeJs, FaReact, FaPython, FaDocker } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
 import { RiOpenaiFill } from "react-icons/ri";
 import { SiKubernetes, SiTerraform } from "react-icons/si";
-import React from "react";
 
 const features = [
   {

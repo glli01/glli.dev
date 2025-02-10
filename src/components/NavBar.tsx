@@ -1,6 +1,5 @@
-import React from "react";
 import { cn } from "@/lib/utils";
-import { SquareTerminal } from "lucide-react";
+// import { SquareTerminal } from "lucide-react";
 import { CiAlignCenterH } from "react-icons/ci";
 
 const navOptions = [
@@ -26,7 +25,11 @@ const navOptions = [
   },
 ];
 
-const NavBar = ({ hasHeader }) => {
+interface NavBarProps {
+  hasHeader?: boolean;
+  children?: React.ReactNode;
+}
+const NavBar = ({ hasHeader }: NavBarProps) => {
   return (
     <nav className="absolute top-0 w-full z-50 px-4 py-6">
       <div className="max-w-7xl mx-auto flex justify-between items-center">

@@ -1,14 +1,12 @@
-import { compareDesc } from "date-fns";
 import { formatDate } from "@/lib/utils";
-import { getCollection } from "astro:content";
-import React from "react";
+import { getCollection } from "astro:content"; //eslint-disable
 
 export const metadata = {
   title: "Blog",
 };
 
 export default async function BlogPage() {
-  const filteredPosts = await getCollection("blog", ({ data }) => {
+  const filteredPosts = await getCollection("blog", () => {
     return true;
   });
   console.log(filteredPosts);
@@ -30,46 +28,39 @@ export default async function BlogPage() {
           <hr className="my-8" />
           {filteredPosts?.length ? (
             <div className="grid gap-10 sm:grid-cols-2">
-              {filteredPosts.map(
-                (
-                  post,
-                  index, //FIXME: need to make blogs show up
-                ) => (
-                  <article
-                    key={index}
-                    className="group cursor-pointer relative flex flex-col space-y-2"
+              {filteredPosts.map((post: any, index: number) => (
+                <article
+                  key={index}
+                  className="group cursor-pointer relative flex flex-col space-y-2"
+                >
+                  {post.data.image && (
+                    <img
+                      src={post.data.image}
+                      alt={post.data.title}
+                      width={804}
+                      height={452}
+                      className="rounded-md border bg-muted transition-colors"
+                    />
+                  )}
+                  <h2 className="text-2xl font-extrabold">{post.data.title}</h2>
+                  {post.data.description && (
+                    <p className="text-muted-foreground">
+                      {post.data.description}
+                    </p>
+                  )}
+                  {post.data.date && (
+                    <p className="text-sm text-muted-foreground">
+                      {formatDate(post.data.date)}
+                    </p>
+                  )}
+                  <a
+                    href={"/blogs/example"}
+                    className="cursor-pointer absolute inset-0"
                   >
-                    {post.data.image && (
-                      <img
-                        src={post.data.image}
-                        alt={post.data.title}
-                        width={804}
-                        height={452}
-                        className="rounded-md border bg-muted transition-colors"
-                      />
-                    )}
-                    <h2 className="text-2xl font-extrabold">
-                      {post.data.title}
-                    </h2>
-                    {post.data.description && (
-                      <p className="text-muted-foreground">
-                        {post.data.description}
-                      </p>
-                    )}
-                    {post.data.date && (
-                      <p className="text-sm text-muted-foreground">
-                        {formatDate(post.data.date)}
-                      </p>
-                    )}
-                    <a
-                      href={"/blogs/example"}
-                      className="cursor-pointer absolute inset-0"
-                    >
-                      <span className="sr-only">View Article</span>
-                    </a>
-                  </article>
-                ),
-              )}
+                    <span className="sr-only">View Article</span>
+                  </a>
+                </article>
+              ))}
             </div>
           ) : (
             <p>No posts published.</p>

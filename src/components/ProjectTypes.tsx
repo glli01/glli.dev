@@ -1,6 +1,3 @@
-import React from "react";
-import { Image } from "lucide-react";
-
 const ProjectTypes = () => {
   const projectTypes = [
     {
@@ -63,7 +60,7 @@ const ProjectTypes = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <img
-                src="https://placehold.co/400x400"
+                src="/src/assets/placeholder.webp"
                 alt="Development Process"
                 width={400}
                 height={400}
