@@ -20,4 +20,6 @@ export default defineConfig({
     rehypePlugins: [rehypePrettyCode],
     syntaxHighlight: false,
   },
+  site: "https://glli.github.io",
+  base: "glli.dev",
 });

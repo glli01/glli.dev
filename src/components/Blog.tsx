@@ -1,5 +1,5 @@
 import { formatDate } from "@/lib/utils";
-import { getCollection } from "astro:content"; //eslint-disable
+import { getCollection } from "astro:content";
 
 export const metadata = {
   title: "Blog",
@@ -9,7 +9,6 @@ export default async function BlogPage() {
   const filteredPosts = await getCollection("blog", () => {
     return true;
   });
-  console.log(filteredPosts);
 
   return (
     <div className="flex min-h-screen max-w-3xl mx-auto w-3xl bg-background flex-col">

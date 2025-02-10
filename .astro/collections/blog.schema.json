@@ -32,6 +32,12 @@
         "published": {
           "type": "boolean"
         },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
         "$schema": {
           "type": "string"
         }
@@ -41,7 +47,8 @@
         "description",
         "date",
         "image",
-        "published"
+        "published",
+        "authors"
       ],
       "additionalProperties": false
     }

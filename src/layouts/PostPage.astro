@@ -1,12 +1,17 @@
 ---
 import { cn, formatDate } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
+import { getCollection } from "astro:content";
 import { Icons } from "@/components/Icons";
 import "@/styles/mdx.css";
 
-const { post, authors } = Astro.props;
+const { post } = Astro.props;
 const postData = post.data;
-const authorsData = authors.data;
+let authors = await getCollection("authors");
+authors = authors?.filter((author) =>
+  postData.authors?.includes(author?.data?.title)
+);
+console.log(authors);
 ---
 
 <meta charset="utf-8" />
@@ -36,25 +41,25 @@ const authorsData = authors.data;
           <h1 class="mt-2 inline-block font-heading text-4xl leading-tight lg:text-5xl">
             {postData.title}
           </h1>
-          {authorsData?.length ? (
+          {authors?.length ? (
             <div class="mt-4 flex space-x-4">
-              {authorsData.map((author: any) =>
-                author ? (
+              {authors.map((author: any) =>
+                author.data ? (
                   <a
-                    href={`https://twitter.com/${author.twitter}`}
+                    href={`https://twitter.com/${author.data.twitter}`}
                     class="flex items-center space-x-2 text-sm"
                   >
                     <img
-                      src={author.avatar}
-                      alt={author.title}
+                      src={author.data.avatar}
+                      alt={author.data.title}
                       width={42}
                       height={42}
-                      class="rounded-full bg-white"
+                      class="rounded-full bg-white overflow-clip"
                     />
                     <div class="flex-1 text-left leading-tight">
-                      <p class="font-medium">{author.title}</p>
+                      <p class="font-medium">{author.data.title}</p>
                       <p class="text-[12px] text-muted-foreground">
-                        @{author.twitter}
+                        @{author.data.twitter}
                       </p>
                     </div>
                   </a>
@@ -77,7 +82,7 @@ const authorsData = authors.data;
         </div>
         <hr class="mt-12" />
         <div class="flex justify-center py-6 lg:py-10">
-          <a href="/blog" class={cn(buttonVariants({ variant: "ghost" }))}>
+          <a href="/blogs" class={cn(buttonVariants({ variant: "ghost" }))}>
             <Icons.chevronLeft className="mr-2 h-4 w-4" />
             See all posts
           </a>

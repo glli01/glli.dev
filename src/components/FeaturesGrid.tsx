@@ -1,7 +1,8 @@
-import { FaNodeJs, FaReact, FaPython, FaDocker } from "react-icons/fa";
+import { FaNodeJs, FaReact, FaDocker, FaPython } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
 import { RiOpenaiFill } from "react-icons/ri";
-import { SiKubernetes, SiTerraform } from "react-icons/si";
+import { SiAnsible, SiKubernetes, SiTerraform } from "react-icons/si";
+import { BiLogoMongodb, BiLogoPostgresql } from "react-icons/bi";
 
 const features = [
   {
@@ -16,7 +17,7 @@ const features = [
   },
   {
     icon: <RiOpenaiFill className="w-5 h-5 text-black" />,
-    text: "OpenAI: Intelligent Automation",
+    text: "OpenAI: Artificial Intelligence",
     href: "https://openai.com/",
   },
   {
@@ -30,9 +31,9 @@ const features = [
     href: "https://kubernetes.io/",
   },
   {
-    icon: <FaPython className="w-5 h-5 text-yellow-300" />,
-    text: "Python: Rapid Development",
-    href: "https://www.python.org/",
+    icon: <BiLogoPostgresql className="w-5 h-5 text-blue-500" />,
+    text: "PostgresQL: Relational Databases",
+    href: "https://www.postgresql.org/",
   },
   {
     icon: <SiTerraform className="w-5 h-5 text-purple-600" />,
@@ -41,8 +42,23 @@ const features = [
   },
   {
     icon: <FaDocker className="w-5 h-5 text-sky-500" />,
-    text: "Docker: Consistent Deployment",
+    text: "Docker: Containerized Systems",
     href: "https://www.docker.com/",
+  },
+  {
+    icon: <FaPython className="w-5 h-5 text-yellow-300" />,
+    text: "Python: AI + Scripting",
+    href: "https://www.python.org/",
+  },
+  {
+    icon: <SiAnsible className="w-5 h-5 text-black" />,
+    text: "Ansible: Automation",
+    href: "https://github.com/ansible/ansible",
+  },
+  {
+    icon: <BiLogoMongodb className="w-5 h-5 text-green-500" />,
+    text: "MongoDB: Document Database",
+    href: "https://www.mongodb.com/",
   },
 ];
 
@@ -50,29 +66,23 @@ export default function FeaturesGrid() {
   return (
     <section className="py-24 px-4">
       <div className="max-w-3xl mx-auto text-center space-y-6">
-        <h2 className="text-4xl font-serif">
-          Your web projects deserve a solid foundation, not another glitchy
-          site. Build with stability, impress users, and grow your business.
-        </h2>
-        <p className="text-gray-600">
-          glli.dev ensures your software projects are stable, efficient, and
-          future-ready. No more bugs, slowdowns, or missed deadlines—just
-          smooth, reliable delivery.
+        <h2 className="text-4xl font-serif">Skills and Technologies</h2>
+        <p className="text-muted-foreground">
+          Over the years, I've gained experience in a variety of technologies
+          that help me build reliable and scalable applications. My work has
+          involved using tools like Terraform for infrastructure, Typescript and
+          PL/SQL for development, and Docker and Kubernetes for managing
+          clusters.
         </p>
-        <p className="text-gray-600">
-          Instead, glli.dev gives your software project a stable, efficient
-          foundation, built for long-term success. It helps you streamline
-          critical processes, from managing tasks to tracking progress, ensuring
-          smooth delivery and growth.
+        <p className="text-muted-foreground">
+          I've also been part of teams working in agile settings, focusing on
+          continuous integration and delivery Below are some of the key
+          technologies I've worked with.
         </p>
-        <p className="text-gray-600">
-          At the same time, ensuring your project runs smoothly with efficient
-          workflows and robust performance, while keeping clients updated on
-          progress.
-        </p>
+        <p className="text-muted-foreground"></p>
       </div>
 
-      <div className="max-w-4xl mx-auto mt-16 grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="max-w-4xl mx-auto mt-16 grid grid-cols-2 md:grid-cols-3 gap-x-7 gap-y-3">
         {features.map((feature, index) => (
           <a
             key={index}
