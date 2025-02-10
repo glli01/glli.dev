@@ -11,7 +11,7 @@ export default function Hero() {
           Hello, I am George Li{" "}
         </h1>
         <h2 className="text-2xl md:text-3xl font-serif">
-          A Software Engineer Specializing in NodeJS, and DevOps
+          A Software Engineer Specializing in Systems Design, and DevOps
         </h2>
         <div className="text-white/80 max-w-2xl mx-auto">
           <p>
